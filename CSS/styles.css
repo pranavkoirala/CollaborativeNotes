@@ -1,0 +1,73 @@
+/* Palette Reference */
+:root {
+    --color-1: #7662b7;
+    --color-2: #cac5ed;
+    --color-3: #e1ddf4;
+    --color-4: #dfcff3;
+    --color-5: #f0c3e2;
+}
+
+body {
+    font-family: 'The Girl Next Door', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.big-text {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 3.5em;
+    letter-spacing: 5px;
+}
+
+.small-text {
+    font-family: 'The Girl Next Door', cursive;
+    font-weight: bolder;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+button,
+input {
+    font-family: 'The Girl Next Door', cursive;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.5em;
+}
+
+/* Use the colors from the palette */
+body {
+    background-color: var(--color-1);
+}
+
+.big-text {
+    color: var(--color-2);
+}
+
+.small-text {
+    color: var(--color-3);
+}
+
+button,
+input {
+    background-color: var(--color-3);
+    color: var(--color-1);
+}
+
+#note-container {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Adjust the styles for the note editor */
+#note-editor {
+    min-height: 70vh;
+    min-width: 70vw;
+    outline: none;
+    border: none;
+}

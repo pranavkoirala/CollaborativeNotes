@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteUromi Notebook</title>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <script src="/Javascript/notebook.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharedb/client/sharedb.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="big-text">NoteUromi Notebook</h1>
+    </header>
+
+    <main>
+      <div id="formatting-buttons">
+        <button id="bold-button"><strong>B</strong></button>
+        <button id="italic-button"><em>I</em></button>
+        <button id="underline-button"><u>U</u></button>
+        <button id="align-left-button">L</button>
+        <button id="align-center-button">C</button>
+        <button id="align-right-button">R</button>
+        <button id="increase-font-button">A<sup>+</sup></button>
+        <button id="decrease-font-button">a<sup>-</sup></button>
+        <select id="font-size-dropdown">
+          <option value="12">12px</option>
+          <option value="16">16px</option>
+          <option value="20">20px</option>
+          <option value="24">24px</option>
+        </select>
+      </div>
+      <div id="note-container">
+        <div id="note-editor" contenteditable="true"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p id="notebook-code"></p>
+    </footer>
+  </body>
+</html>

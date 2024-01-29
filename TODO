@@ -1,8 +1,8 @@
 TODO:
-Fix the bug where when someone joins after text is already written and then starts writing, the previously written text is deleted.
 Add user personalization, cursor color, text color, etc.
 Create a user-friendly interface for creating and editing notes.
 Add support for rich text formatting in notes.
 
 DONE:
 Implement real-time collaboration feature using websockets.
+Fix the bug where when someone joins after text is already written and then starts writing, the previously written text is deleted.

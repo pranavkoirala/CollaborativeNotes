@@ -38,7 +38,6 @@ input {
     font-size: 1.5em;
 }
 
-/* Use the colors from the palette */
 body {
     background-color: var(--color-1);
 }
@@ -64,10 +63,10 @@ input {
     border-radius: 8px;
 }
 
-/* Adjust the styles for the note editor */
 #note-editor {
     min-height: 70vh;
     min-width: 70vw;
     outline: none;
     border: none;
+    font-family: 'Mali', cursive;
 }

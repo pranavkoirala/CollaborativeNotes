@@ -32,52 +32,52 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.getElementById("bold-button").addEventListener("click", function () {
-    execCommand("bold", false, null);
+    document.execCommand("bold", false, null);
   });
 
   document
     .getElementById("italic-button")
     .addEventListener("click", function () {
-      execCommand("italic", false, null);
+      document.execCommand("italic", false, null);
     });
 
   document
     .getElementById("underline-button")
     .addEventListener("click", function () {
-      execCommand("underline", false, null);
+      document.execCommand("underline", false, null);
     });
 
   document
     .getElementById("align-left-button")
     .addEventListener("click", function () {
-      execCommand("justifyLeft", false, null);
+      document.execCommand("justifyLeft", false, null);
     });
 
   document
     .getElementById("align-center-button")
     .addEventListener("click", function () {
-      execCommand("justifyCenter", false, null);
+      document.execCommand("justifyCenter", false, null);
     });
 
   document
     .getElementById("align-right-button")
     .addEventListener("click", function () {
-      execCommand("justifyRight", false, null);
+      document.execCommand("justifyRight", false, null);
     });
 
   document
     .getElementById("increase-font-button")
     .addEventListener("click", function () {
-      execCommand("fontSize", false, "4");
+      document.execCommand("fontSize", false, "4");
     });
 
   document
     .getElementById("decrease-font-button")
     .addEventListener("click", function () {
-      execCommand("fontSize", false, "2");
+      document.execCommand("fontSize", false, "2");
     });
 
   fontSizeDropdown.addEventListener("change", function () {
-    execCommand("fontSize", false, fontSizeDropdown.value);
+    document.execCommand("fontSize", false, fontSizeDropdown.value);
   });
 });

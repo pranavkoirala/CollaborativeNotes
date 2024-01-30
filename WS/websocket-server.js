@@ -17,7 +17,6 @@ wss.on("connection", (ws, req) => {
     const data = JSON.parse(message);
 
     if (data.type === "requestContent") {
-      // If it's a request for existing content, send the current content to the new user
       getNotebookContent(notebookCode, (existingContent) => {
         const response = {
           type: "existingContent",
@@ -26,10 +25,8 @@ wss.on("connection", (ws, req) => {
         ws.send(JSON.stringify(response));
       });
     } else {
-      // Update the current content for the notebook
       updateNotebookContent(notebookCode, data.content);
 
-      // Broadcast the message to all connected clients
       wss.clients.forEach((client) => {
         if (client !== ws && client.readyState === WebSocket.OPEN) {
           const broadcastMessage = {

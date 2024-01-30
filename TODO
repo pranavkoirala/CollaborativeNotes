@@ -2,6 +2,7 @@ TODO:
 Add user personalization, cursor color, text color, etc.
 Create a user-friendly interface for creating and editing notes.
 Add support for rich text formatting in notes.
+Change websocket to run from Heroku ^\_^
 
 DONE:
 Implement real-time collaboration feature using websockets.

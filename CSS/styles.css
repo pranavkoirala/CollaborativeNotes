@@ -70,3 +70,17 @@ input {
     border: none;
     font-family: 'Mali', cursive;
 }
+
+#font-size-dropdown {
+    font-size: 1.5em;
+    padding: 10px 15px;
+    font-family: 'Mali', cursive;
+}
+
+#increase-font-button,
+#decrease-font-button,
+#bold-button,
+#italic-button,
+#underline-button {
+    font-family: 'Mali', cursive;
+}
